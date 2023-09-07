@@ -1,2 +1,4 @@
 # MNIST-digit-recognition
-The code I've written for a neural network that can identify the digits in the well-known MNIST dataset.
+
+"Stavito" is a neural network designed for data classification into binary or multiple categories. To assess its performance, it must undergo training using a training dataset, followed by accuracy evaluation using a separate test dataset.
+
