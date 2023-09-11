@@ -25,8 +25,8 @@
 ### `Stavito` 
 
 ### For $c$ layers : 
-- **Input** : $X$ is a matrix with dimensions $(n^{[0]}\times m)$ where $n^{[0]}$ is the number of variables per data and $m$ is the number of data in the datatset.
-**$y$** is a matrix with dimensions $(l \times m)$ where $l$ is the number of classifications possible per data. For the MNIST dataset, $l=10$.
+- **Input** : $X$ : This is a matrix with dimensions of $(n^{[0]}\times m)$, where $n^{[0]}$ represents the number of variables for each piece of data, and $m$ is the total number of data points in the dataset. $y$ : This matrix has dimensions of $(l \times m)$, where $l$ denotes the number of possible classifications for each data point. In the case of the MNIST dataset, there are 10 possible classifications, so $l=10.
+
 
 - **Initialisation** : 
 $$W^{[c]} \in \mathbb{R}^{n^{[c]}\times n^{[c-1]}}, c \in \mathbb{N}$$
@@ -47,8 +47,8 @@ $$b^{[c]}=b^{[c]} - \alpha \cdot db^{[c]}$$
 
 ### For the MNIST dataset : 
 
-To convert the pictures of each handwritten number into useful data for the algorithm, I used the `idx2numpy` library. This allowed me to have to obtain the first input matrix $X$ with dimensions $(784 \times 60000)$ which represent $784$ variables with values between $0$ and $255$ (before standardization to get values between $0$ and $1$) that represent each of the pixel on the black and white photo $(28x28)$ for the $60 000$ photos in the MNIST dataset. 
-The second input matrix $y$ with dimensions $(10 \times 60000)$ represent the correct number for each of the $60 000$ photos of the dataset under the form of a linear matrix with, for each of the $10$ last neuron a value of $0$ or $1$. For example, if the correct number for the first photo is 8, the first row of the first column of the $y$ matrix will be $(0 0 0 0 0 0 0 0 1 0 0)$. 
+
+To prepare the handwritten number images for algorithmic processing, I utilized the `idx2numpy` library. This step enabled me to create two input matrices: Matrix X (Dimensions: $(784 \times 60000)$): This matrix represents $60 000$ images, each measuring $28 \times 28$ pixels. Initially, it contains $784$ variables, each with values ranging from $0$ to $255$ (prior to standardization, which transforms them into values between $0$ and $1$). These variables correspond to the individual pixel values within each black-and-white photo.
 
 ## How to use it 
 
