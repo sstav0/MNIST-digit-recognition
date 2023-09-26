@@ -39,7 +39,7 @@ $$A^{[c]}= {1\over 1+e^{-Z^{[c]}} }$$
 $$dZ^{[c_f]}=A{[c_f]}-y$$
 where $c_f$ is the final layer
 $$dW^{[c]}={1 \over m} \times dZ^{[c]} \cdot A^{[c-1]^T}$$
-$$db^{[c]}={1 \over m}\sum_{axe 1}dZ^{c]}$$
+$$db^{[c]}={1 \over m}\sum_{axe 1}dZ^{[c]}$$
 $$dZ^{[c-1]}=W^{[c]^T} \cdot dZ^{[c]} \cdot A^{[c-1]}(1-A^{[c-1]})$$
 - **Update**
 $$W^{[c]}=W^{[c]} - \alpha \cdot dW^{[c]}$$
