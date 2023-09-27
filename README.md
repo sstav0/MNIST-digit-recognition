@@ -50,7 +50,7 @@ $$b^{[c]}=b^{[c]} - \alpha \cdot db^{[c]}$$
 ### For the MNIST dataset : 
 
 
-To prepare the handwritten number images for algorithmic processing, I utilized the `idx2numpy` library. This step allowed me to create two input matrices: Matrix X (Dimensions: $(784 \times 60000)$): This matrix represents $60 000$ images, each measuring $28 \times 28$ pixels. Initially, it contains $784$ variables, each with values ranging from $0$ to $255$ (prior to standardization, which transforms them into values between $0$ and $1$). These variables correspond to the individual pixel values within each black-and-white photo.
+To prepare the handwritten number images for algorithmic processing, I utilized the `idx2numpy` library. This step allowed me to create two input matrices: Matrix X (Dimensions: $/(784 \times 60000/)$): This matrix represents $60 000$ images, each measuring $28 \times 28$ pixels. Initially, it contains $784$ variables, each with values ranging from $0$ to $255$ (prior to standardization, which transforms them into values between $0$ and $1$). These variables correspond to the individual pixel values within each black-and-white photo.
 
 ## How to use it 
 
