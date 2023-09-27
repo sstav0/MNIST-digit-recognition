@@ -24,7 +24,7 @@
 
 ### `Stavito` 
 
-### For $c$ layers : 
+### For $C$ layers : 
 - **Input** : 
 	- $X$ : This is a matrix with dimensions of $(n^{[0]}\times m)$, where $n^{[0]}$ represents the number of variables for each piece of data, and $m$ is the total number of data points in the dataset. 
 	- $y$ : This matrix has dimensions of $(l \times m)$, where $l$ denotes the number of possible classifications for each data point. In the case of the MNIST dataset, there are 10 possible classifications, so $l=10$.
